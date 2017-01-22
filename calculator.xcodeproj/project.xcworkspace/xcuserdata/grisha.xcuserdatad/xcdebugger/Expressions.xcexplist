@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ViewController.prepareExpr([String]) -&gt; [Token]:ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "String(expr.last()">
+            </PersistentString>
+            <PersistentString
+               value = "formula">
+            </PersistentString>
+            <PersistentString
+               value = "expr.last()!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AL2-sL-C6B">
+                                <rect key="frame" x="20" y="66" width="335" height="47"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="Ccj-CV-GeC"/>
+                                </constraints>
+                                <state key="normal" title="Вычислить">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H5t-U1-ZPa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1SQ-Gu-NsL">
+                                <rect key="frame" x="20" y="121" width="335" height="85"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="8yL-zD-enj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Формула" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o32-Zd-2hX">
+                                <rect key="frame" x="20" y="28" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="335" id="8Vc-qV-6qZ"/>
+                                    <constraint firstAttribute="width" constant="335" id="t90-PO-vo5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8Vc-qV-6qZ"/>
+                                        <exclude reference="t90-PO-vo5"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1SQ-Gu-NsL" firstAttribute="trailing" secondItem="AL2-sL-C6B" secondAttribute="trailing" id="GFx-TZ-Gda"/>
+                            <constraint firstItem="1SQ-Gu-NsL" firstAttribute="leading" secondItem="AL2-sL-C6B" secondAttribute="leading" id="Iz1-jx-Ckh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="o32-Zd-2hX" secondAttribute="trailing" id="J4V-QS-G5b"/>
+                            <constraint firstItem="o32-Zd-2hX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QgP-bw-xeu"/>
+                            <constraint firstItem="o32-Zd-2hX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="VGe-gS-W9p"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="o32-Zd-2hX" secondAttribute="leading" id="ZKH-Pe-dSu"/>
+                            <constraint firstItem="AL2-sL-C6B" firstAttribute="top" secondItem="o32-Zd-2hX" secondAttribute="bottom" constant="8" symbolic="YES" id="dYT-9k-Py5"/>
+                            <constraint firstItem="AL2-sL-C6B" firstAttribute="trailing" secondItem="o32-Zd-2hX" secondAttribute="trailing" id="ehl-jo-J5Y"/>
+                            <constraint firstItem="AL2-sL-C6B" firstAttribute="leading" secondItem="o32-Zd-2hX" secondAttribute="leading" id="lg5-JT-UQR"/>
+                            <constraint firstItem="o32-Zd-2hX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="tjr-zl-c6G"/>
+                            <constraint firstItem="1SQ-Gu-NsL" firstAttribute="top" secondItem="AL2-sL-C6B" secondAttribute="bottom" constant="8" symbolic="YES" id="zvD-3X-NXU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="J4V-QS-G5b"/>
+                                <exclude reference="ZKH-Pe-dSu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="inputField" destination="o32-Zd-2hX" id="5DT-yA-aw5"/>
+                        <outlet property="resultLabel" destination="1SQ-Gu-NsL" id="LI7-qS-f6d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="438.5" y="356.5"/>
+        </scene>
+    </scenes>
+</document>
